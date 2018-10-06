@@ -19,6 +19,12 @@
 
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_UsCjfBMpMsMvaMgPDL6Uw");
+		})();
+	</script>
 </head>
 
 <body id="body" data-ng-app="contactApp">
@@ -79,7 +85,7 @@
 							</a>
 						</div>
 						<div class="float-right social-download-wrap">
-							<a href="#" class="btn btn-default float-left">
+							<a target="_blank" href="https://drive.google.com/open?id=1XoVK6-4ldAXb4yuJ396ue_fA9Hcn233Z" class="btn btn-default float-left">
 								<span class="mask"></span>
 								<span class="btn-label">
 									<b>download resume</b>
@@ -105,17 +111,26 @@
 							about
 						</h6>
 						<p class="pad-bottom-35 wow fadeInUp" data-wow-duration=".6s">
-							Award winning interdisciplinary Designer & Photographer. Currently pursuing a perfect blend of style and
-							function for a wide range of interactive graphic design. For the past 6 years I've helped global companies,
-							organizations and start-ups reach business goals with user focused, interactive design. I enjoy bringing clarity
-							to complex problems with a people first approach.
+							I am what you call a "Digital Nomad".<br>
+							I travel the world looking for new destinations and experiences.<br>
+							I am a single man army when it comes to my work - i'm the guy you can tell to do something and i'll find the way
+							to do it, even if it's far from my field of expertise.<br><br>
+
+							An autodidact - no formal programming education - i'm a go getter - not the one to seat in class to listen to
+							someone ramble on on what life is about - i want to try for myself - and taste everything before i choose my
+							meal.<br><br>
+
+							My focus is UI/UX - i'm an artist at heart - and my love is to create visually appealing websites as much as
+							possible.<br>
+							I am looking for challenging and cutting edge technology projects - i get bored quickly and in constant need to
+							push myself beyond my limits.<br>
 						</p>
-						<p class="wow fadeInUp" data-wow-duration=".4s">
+						<p ng-if="" class="wow fadeInUp" data-wow-duration=".4s">
 							I am a complete social animal. Find my work on <a class="goto-social" href="#" target="_blank">Behance</a> & <a
 							 href="#" class="goto-social" target="_blank">Dribbble</a>. Experience my photography skills on <a href="#"
 							 class="goto-social" target="_blank">Instagram</a> & <a class="goto-social" href="#" target="_blank">Flickr</a>.
 						</p>
-						<div class="per-signature margin-top-sm wow fadeInUp" data-wow-duration=".4s">
+						<div ng-if="" class="per-signature margin-top-sm wow fadeInUp" data-wow-duration=".4s">
 							<img class="img-responsive" src="img/signature.png" alt="signature" />
 						</div>
 					</section>
@@ -371,62 +386,21 @@
 					<section id="exp_sec" class="col-lg-10 col-md-11 col-sm-11 center-div experience-wrap  sec-pad">
 						<h6>experience</h6>
 						<div class="exp-timeline-wrap">
-							<div class="row exp-timeline timeline-active">
-								<div class="col-xs-2">
-									<div class="timeline-st"></div>
-								</div>
-								<div class="col-xs-10 exp-content-wrap">
-									<div class="row">
-										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0s">
-											<div class="col-sm-3 duration"><span>mar 2014 - present</span></div>
-											<div class="col-sm-9">
-												<span class="job-desn">UI Developer</span>
-												<span class="job-loc">Fakebook Studio, New York
-												</span>
-												<p class="job-summary p-small">In this small yet expanding company, I had the opportunity to turn my
-													passion for the web in a job right after graduation. Being the only designer in the company I have often
-													dealt with the whole process of designing for our customers.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 							<div class="row exp-timeline">
 								<div class="col-xs-2">
 									<div class="timeline-st"></div>
 								</div>
 								<div class="col-xs-10 exp-content-wrap">
 									<div class="row">
-										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.2s">
-											<div class="col-sm-3 duration"><span>Jul 2013 — Mar 2014</span></div>
+										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.6s">
+											<div class="col-sm-3 duration"><span>May 2018 - Current</span></div>
 											<div class="col-sm-9">
-												<span class="job-desn">Visual Communication Designer</span>
-												<span class="job-loc">Dropzone, NYC
+												<span class="job-desn">Co-Founder & CTO
 												</span>
-												<p class="job-summary p-small">Being in a very well structured company, with clear and defined work
-													procedures, helped me grow both personally and professionally, as well as enjoying a young and
-													international working environment. I had the opportunity to redefine the way I work in a more intelligent
-													way.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row exp-timeline">
-								<div class="col-xs-2">
-									<div class="timeline-st"></div>
-								</div>
-								<div class="col-xs-10 exp-content-wrap">
-									<div class="row">
-										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.4s">
-											<div class="col-sm-3 duration"><span>Jan 2013 – Jul 2013</span></div>
-											<div class="col-sm-9">
-												<span class="job-desn">Web Publishing
+												<span class="job-loc">CrystalLions
 												</span>
-												<span class="job-loc">Daisystreet, NYC
-												</span>
-												<p class="job-summary p-small">Being the first design agency in my career and being one among the best in
-													New York, I've learned to be proficient in a fast-paced work environment.</p>
+												<p class="job-summary p-small">Co-Founder and CTO for CrystalLions digital mesdia agency.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -439,15 +413,105 @@
 								<div class="col-xs-10 exp-content-wrap">
 									<div class="row">
 										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.6s">
-											<div class="col-sm-3 duration"><span>Oct 2011 – Jan 2013</span></div>
+											<div class="col-sm-3 duration"><span>Jun 2018 - Current</span></div>
 											<div class="col-sm-9">
-												<span class="job-desn">Intern Developer
+												<span class="job-desn">UI/UX Developer
 												</span>
-												<span class="job-loc">Oxwalk Ducks, California
+												<span class="job-loc">Toptal
 												</span>
-												<p class="job-summary p-small">Create frameworks to guide critical thinking, to streamline the ideation
-													process and to visualize complex concepts. Uses various graphic approaches to make complex ideas more
-													tangible.</p>
+												<p class="job-summary p-small">Freelance work at Toptal's network of the world’s top 3% of software
+													engineering, design, and finance talent.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row exp-timeline">
+								<div class="col-xs-2">
+									<div class="timeline-st"></div>
+								</div>
+								<div class="col-xs-10 exp-content-wrap">
+									<div class="row">
+										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.6s">
+											<div class="col-sm-3 duration"><span>Feb 2013 - Current</span></div>
+											<div class="col-sm-9">
+												<span class="job-desn">Senior Front-End Developer
+												</span>
+												<span class="job-loc">RADIX
+												</span>
+												<p class="job-summary p-small">migrating a working softwere to a web environment - an MDM for more then
+													100,000 devices.
+													creating a web based app - working with HTML&CSS&JS under angularJS.
+													research on front-end tech & implementation.
+													searching for UI/UX best practices & implementation.
+													building new features.
+													managing the WHOLE front-end side - designing and building the app.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row exp-timeline">
+								<div class="col-xs-2">
+									<div class="timeline-st"></div>
+								</div>
+								<div class="col-xs-10 exp-content-wrap">
+									<div class="row">
+										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.2s">
+											<div class="col-sm-3 duration"><span>Apr 2011 - Dec 2011</span></div>
+											<div class="col-sm-9">
+												<span class="job-desn">Project Manager</span>
+												<span class="job-loc">MOTO COMMUNICATIONS
+												</span>
+												<p class="job-summary p-small">managing building and transferring data from the old site to the new.
+													manging the schedule (timetable).
+													QA work - finding BUGS and opening tickects for the programmers team.
+													working with design - UI/UX management.
+													guiding the office team on working with new system/admin.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row exp-timeline">
+								<div class="col-xs-2">
+									<div class="timeline-st"></div>
+								</div>
+								<div class="col-xs-10 exp-content-wrap">
+									<div class="row">
+										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.4s">
+											<div class="col-sm-3 duration"><span>Dec 2010 - Apr 2011</span></div>
+											<div class="col-sm-9">
+												<span class="job-desn">Traffic ,Newsletters and Media
+												</span>
+												<span class="job-loc">MOTO COMMUNICATIONS
+												</span>
+												<p class="job-summary p-small">working with google analytics and producing statistics reports in EXCEL.
+													managing the ad-media system of the website under OpenX / DoubleClick.
+													managing the newsletters system - creating and distributing to over 40,000 users.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row exp-timeline timeline-active">
+								<div class="col-xs-2">
+									<div class="timeline-st"></div>
+								</div>
+								<div class="col-xs-10 exp-content-wrap">
+									<div class="row">
+										<div class="wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0s">
+											<div class="col-sm-3 duration"><span>Feb 2007 - Oct 2009</span></div>
+											<div class="col-sm-9">
+												<span class="job-desn">Web Developer</span>
+												<span class="job-loc">LEHAVI SOLUTIONS
+												</span>
+												<p class="job-summary p-small">HTML@PSD & browser compatibility.<br>
+													C# langugae under .NET framework.<br>
+													working with SQL database.<br>
+													a bit of WPF.</p>
 											</div>
 										</div>
 									</div>
@@ -460,7 +524,7 @@
 					<hr class="separater-hr" />
 
 					<!--Client Sec-->
-					<section  id="client_sec" class="col-lg-10 col-md-11 col-sm-11 center-div client-wrap  sec-pad wow bounceIn"
+					<section id="client_sec" class="col-lg-10 col-md-11 col-sm-11 center-div client-wrap  sec-pad wow bounceIn"
 					 data-wow-duration=".4s">
 						<h6>technologies</h6>
 						<div class="client-carousel">
@@ -522,7 +586,7 @@
 						<div data-ng-controller="ContactController" class="align-center wow fadeInUp" data-wow-duration=".4s">
 							<h3>Hello <span data-ng-bind="formData.inputName||'friend'"></span>, I'd love to hear from you.</h3>
 							<div>
-								<form data-ng-submit="submit(contactform, $event)" name="contactform" method="post" class="row form-horizontal"
+								<form data-ng-submit="submit(contactform, $event)" name="contactform" id="contactform" method="post" class="row form-horizontal"
 								 role="form">
 									<div class="form-group input--hoshi col-sm-6" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
 										<div class="input-wrap">
@@ -554,12 +618,32 @@
 										</div>
 									</div>
 								</form>
-								<p data-ng-class="result">{{ resultMessage }}</p>
+								<div id="msgSent">
+									Your message has been successfully sent. We will contact you very soon!
+								</div>
+								<div id="msgError">
+									There was an error trying to send your message.
+								</div>
 							</div>
 						</div>
 						<div class="email-direct">
 							<p class="wow fadeInRight" data-wow-duration=".4s">Or simply email me at <a href="mailto:nerkat@gmail.com">nerkat@gmail.com</a></p>
 						</div>
+
+
+						<!-- preloader    ================================================== -->
+						<div id="preloader" style="display:none;">
+							<div id="loader">
+								<div class="line-scale-pulse-out">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+
 					</section>
 					<!--Contact Sec-->
 
@@ -578,22 +662,18 @@
 									<!--Social Icons-->
 									<ul class="social-icons float-right">
 										<li>
-											<a href="#" class="social-icon">
+											<a href="https://www.facebook.com/neriaaaaa" class="social-icon">
 												<span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="social-icon">
-												<span class="fa" data-hover="&#xf099;">&#xf099;</span>
+											<a href="https://www.linkedin.com/in/neria-katz/" class="social-icon">
+												<span class="fa" data-hover="&#xf0e1;">&#xf0e1;</span>
 											</a>
 										</li>
+
 										<li>
-											<a href="#" class="social-icon">
-												<span class="fa" data-hover="&#xf16e;">&#xf16e;</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="social-icon">
+											<a href="https://www.instagram.com/crystallionslife/" class="social-icon">
 												<span class="fa" data-hover="&#xf16d;">&#xf16d;</span>
 											</a>
 										</li>
@@ -643,6 +723,112 @@
 	<script src="js/froogaloop2.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/init.js"></script>
+
+	<style>
+		/* ===================================================================
+ * # preloader
+ *
+ * ------------------------------------------------------------------- */
+		#preloader {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #141414f0;
+			z-index: 9;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#loader {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.line-scale-pulse-out>div {
+			background-color: #e91e63;
+			width: 4px;
+			height: 35px;
+			border-radius: 2px;
+			margin: 2px;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			display: inline-block;
+			-webkit-animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+			animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+		}
+
+		.line-scale-pulse-out>div:nth-child(2),
+		.line-scale-pulse-out>div:nth-child(4) {
+			-webkit-animation-delay: -0.4s !important;
+			animation-delay: -0.4s !important;
+		}
+
+		.line-scale-pulse-out>div:nth-child(1),
+		.line-scale-pulse-out>div:nth-child(5) {
+			-webkit-animation-delay: -0.2s !important;
+			animation-delay: -0.2s !important;
+		}
+
+		@-webkit-keyframes line-scale-pulse-out {
+			0% {
+				-webkit-transform: scaley(1);
+				transform: scaley(1);
+			}
+
+			50% {
+				-webkit-transform: scaley(0.4);
+				transform: scaley(0.4);
+			}
+
+			100% {
+				-webkit-transform: scaley(1);
+				transform: scaley(1);
+			}
+		}
+
+		@keyframes line-scale-pulse-out {
+			0% {
+				-webkit-transform: scaley(1);
+				transform: scaley(1);
+			}
+
+			50% {
+				-webkit-transform: scaley(0.4);
+				transform: scaley(0.4);
+			}
+
+			100% {
+				-webkit-transform: scaley(1);
+				transform: scaley(1);
+			}
+		}
+
+		/* custome add ons */
+
+		#msgSent {
+			display: none;
+			font-size: 19px;
+			font-weight: bold;
+			color: #4cc2c0;
+			padding: 0px 0px 25px 5px;
+		}
+
+		#msgError {
+			display: none;
+			font-size: 19px;
+			font-weight: bold;
+			color: #f2484b;
+			padding: 0px 0px 25px 5px;
+		}
+	</style>
+
+
 </body>
 
 </html>
