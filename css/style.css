@@ -540,10 +540,13 @@ p {
 .content-block .person-img {
   height: 150px;
   width: 150px;
+  /* background: url(../img/candidate.png); */
   background: url(../img/candidate.jpg);
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 175px;
+  background-position: center;
 }
 
 /********Header Sec CSS********/
