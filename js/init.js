@@ -546,8 +546,9 @@ $('input[type=text], textarea').placeholder();
 /***** Placehoder ie9 end*****/
 
 /***** LightGallery init start*****/
-$('#portfolio').lightGallery({
+$('.portfolio').lightGallery({
 	showThumbByDefault: false,
 	hash: false
 });
+
 /***** LightGallery init end*****/
